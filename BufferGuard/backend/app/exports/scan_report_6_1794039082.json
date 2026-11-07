@@ -1,0 +1,24 @@
+{
+  "id": 6,
+  "filename": "api_test.c",
+  "source_hash": "58869825092f49000992fb0a02d5a84164027b40c6467203cd4dd59d76353f06",
+  "scan_timestamp": "2026-11-07T13:41:22.517964",
+  "status": "COMPLETED",
+  "total_findings": 1,
+  "security_score": 75.0,
+  "vulnerabilities": [
+    {
+      "id": 5,
+      "vulnerability_type": "Obsolete Unbounded Function (gets)",
+      "severity": "Critical",
+      "confidence": "Confirmed",
+      "line_number": 5,
+      "code_snippet": "gets(b);",
+      "description": "gets() reads input from stdin until a newline or EOF without any bounds checking.",
+      "possible_consequences": "Arbitrary code execution, stack smashing, crash via segmentation fault.",
+      "recommendation": "Replace with fgets(buffer, sizeof(buffer), stdin) to enforce bounded reading.",
+      "safer_code": "if (fgets(buffer, sizeof(buffer), stdin) == NULL) { /* handle error */ }",
+      "cwe_id": "CWE-120: Buffer Copy without Checking Size of Input"
+    }
+  ]
+}

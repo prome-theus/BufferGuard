@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "name": "BufferGuard (Project Root)",
+      "path": "."
+    },
+    {
+      "name": "Frontend (React + Vite)",
+      "path": "frontend"
+    },
+    {
+      "name": "Backend (FastAPI)",
+      "path": "backend"
+    },
+    {
+      "name": "C Engine (C11)",
+      "path": "c_engine"
+    },
+    {
+      "name": "Documentation & Reports",
+      "path": "docs"
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "C:\\Users\\vaibh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "python.analysis.extraPaths": [
+      "${workspaceFolder:BufferGuard (Project Root)}",
+      "${workspaceFolder:Backend (FastAPI)}"
+    ],
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder:BufferGuard (Project Root)}",
+      "PATH": "C:\\Program Files\\nodejs;${env:PATH}"
+    }
+  }
+}
